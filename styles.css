@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* definição de fonte */
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* espaço entre */
+}
+
+/* Caixa de texto */
+.caixa-texto {
+    width: 600px;
+}
+
+h1 {
+    color: #333;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+span {
+    color: darkgreen;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background-color: darkgreen;
+    color: aliceblue;
+    border-radius: 40px; /* arredondar bordas */
+    border: none; /* nada */
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer; /* ponteiro config */
+    transition: 0.5s;
+}
+
+button:hover {
+    background: green;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end; /* mantém a imagem à direita */
+    align-items: flex-end; /* alinha a imagem na parte inferior */
+    margin-top: 0; /* remove espaçamento extra */
+    height: 500px; /* altura fixa para a caixa */
+    overflow: visible; /* permite a imagem ocupar a área sem cortar */
+    position: relative; /* para posicionar elementos internos se precisar */
+}
+
+.copo {
+    max-width: 340px;
+    max-height: 100%; /* permite que a altura da imagem se ajuste ao container */
+    object-fit: contain; /* mantém proporção da imagem */
+}
+
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-menu {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-menu:hover {
+    transform: translateY(-30px);
+}
+
+/* Circulo de fundo */
+.circulo {
+    width: 100%;
+    height: 100%;
+    background-color: #017143;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
