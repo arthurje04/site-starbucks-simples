@@ -53,22 +53,22 @@ button {
 button:hover {
     background: green;
 }
-
+.logo {
+    width: 80px; 
+}
 .caixa-imagem {
     width: 600px;
     display: flex;
-    justify-content: flex-end; /* mantém a imagem à direita */
-    align-items: flex-end; /* alinha a imagem na parte inferior */
-    margin-top: 0; /* remove espaçamento extra */
-    height: 500px; /* altura fixa para a caixa */
-    overflow: visible; /* permite a imagem ocupar a área sem cortar */
-    position: relative; /* para posicionar elementos internos se precisar */
+    justify-content: flex-end;
+    margin-top: 200px;
+
 }
 
 .copo {
     max-width: 340px;
-    max-height: 100%; /* permite que a altura da imagem se ajuste ao container */
+    /* permite que a altura da imagem se ajuste ao container */
     object-fit: contain; /* mantém proporção da imagem */
+   
 }
 
 
@@ -79,8 +79,10 @@ button:hover {
 }
 
 .botao-menu {
+    width: 100px;
     cursor: pointer;
-    transition: 0.5s;
+    margin: 10px;
+    transition: 1s;
 }
 
 .botao-menu:hover {
